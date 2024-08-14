@@ -8,67 +8,57 @@ version: 1.0.0+1
 environment:
   sdk: ^3.5.0
 
-#-------------PACKAGES ------------#
-
 dependencies:
   flutter:
     sdk: flutter
 
-#-------UTILITY PACKAGES -----------#
+  # Utility packages
+  http: ^1.1.0
+  intl: ^0.19.0
+  logger: ^2.0.1
+  url_launcher: ^6.1.12
+  flutter_native_splash: ^2.4.1
 
-
-
-#-------ICONS--------#
+  # Icons
   iconsax: ^0.0.8
   cupertino_icons: ^1.0.8
 
-
-#------STATEMENT MANAGEMENT---------#
+  # State management
   get: ^4.6.5
-
-#------ PRODUCT SPECIFIC ---------#
-
-
-
-#------- ./ PACKAGES END -----------#
-
+  get_storage: ^2.1.1
 
 dev_dependencies:
   flutter_test:
     sdk: flutter
 
- 
   flutter_lints: ^4.0.0
 
-
-
 flutter:
-
   uses-material-design: true
-#------- LOCAL ASETS----------#
 
-
-   assets:
+  # Local assets
+  assets:
     - assets/logos/
     - assets/icons/
-    - assets/amages/
-#---------LOCAL FONTS ------------#
+    - assets/images/
 
+  # Local fonts
   fonts:
     - family: Poppins
       fonts:
-        - assets: assets/fonts/Poppins-Light.ttf
+        - asset: assets/fonts/Poppins-Light.ttf
           weight: 300
-        - assets: assets/fonts/Poppons-Regular.ttf
+        - asset: assets/fonts/Poppins-Regular.ttf
           weight: 400
-        - assets: assets/fonts/Poppins-Italic.ttf
+        - asset: assets/fonts/Poppins-Italic.ttf
           style: italic
-        - assets: assets/fonts/Poppins-Medium.ttf
+        - asset: assets/fonts/Poppins-Medium.ttf
           weight: 500
-        - assets: assets/fonts/Poppins-MediumItalic.tff
+        - asset: assets/fonts/Poppins-MediumItalic.ttf
           weight: 500
           style: italic
-        - assets: assets/fonts/Poppins-SemiBold.tff
+        - asset: assets/fonts/Poppins-SemiBold.ttf
           weight: 600
-        - assets: assets/fonts/Poppins-Bold.tff
+        - asset: assets/fonts/Poppins-Bold.ttf
           weight: 800
+
